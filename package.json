@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "takehome_project",
   "main": "index.js",
+  "repository": "https://github.com/woojunchoi/fe-sample-project",
   "scripts": {
     "compile": "webpack -w",
     "start": "nodemon server.js",

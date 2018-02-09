@@ -1,16 +1,13 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
-import Nav from './containers/Nav/Nav'
-import Item from './components/Item/Item'
-import * as shopping_action from './actions/data_action'
+import Nav from '../components/Nav/Nav'
+import Item from '../components/Item/Item'
+import * as shopping_action from '../actions/data_action'
 import css from './appcss.css'
 
 const mapStateToProps = store => ({
     datas: store.data_reducer.data,
     addedItems: store.data_reducer.addedItems
-  // skills: store.skills,
-  // login: store.login,
-  // signup: store.signUp
 });
 
 const mapDispatchToProps = (dispatch) => ({
