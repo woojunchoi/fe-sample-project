@@ -1,0 +1,47 @@
+.nav_place {
+    display:flex;
+    justify-content: space-between;
+    background-color:blue;
+    height:45px;
+    align-items: center;
+    width:100%;
+
+}
+.nav {
+    display:inline-block;
+    color:white;
+    text-align: center;
+    margin-right:10px;   
+    font-size:15px; 
+}
+
+#nav-text {
+    font-size:20px;
+    font-weight:900;
+    margin-right:35px;    
+}
+
+#shop {
+    text-decoration: underline;
+    font-size:15px;
+}
+
+#cart-number {
+    background-color: white;
+    color:blue;
+    padding:2px 15px 2px 15px;
+    border-radius:5px;
+    font-size:15px;
+}
+
+.glyphicon-shopping-cart {
+    color:white;
+    font-size:20px;
+    margin-left:10px;
+    margin-right:10px;
+}
+
+.nav-right {
+    margin-right:10px;
+    font-size:20px;
+}
