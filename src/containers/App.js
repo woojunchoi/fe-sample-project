@@ -4,6 +4,7 @@ import Nav from '../components/Nav/Nav'
 import Item from '../components/Item/Item'
 import * as shopping_action from '../actions/data_action'
 import css from './appcss.css'
+import CartModal from '../components/CartModal/CartModal'
 
 const mapStateToProps = store => ({
     datas: store.data_reducer.data,
@@ -27,7 +28,6 @@ class App extends Component {
   }
 
   render() {
-    console.log(this.props.currentItem)
     const item = this.props.datas.map((data,index) => {
       return <Item
        key={index}
@@ -43,12 +43,15 @@ class App extends Component {
     return(
       <div className ='app'>
         <Nav numberofitem={this.props.addedItems.length}/>
+       <div className ='lower'>
+        <CartModal />
         <h2 className='header'>Shop our features collection</h2>
         <div className ='big-container'>
           <div className ='item-container'>
             {item}
           </div>
         </div>
+       </div>
       </div>
     )
   }

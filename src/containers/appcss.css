@@ -1,6 +1,6 @@
 
 .app {
-    width:100%;
+    width:100%;  
 }
 .big-container {
     display:flex;
@@ -14,22 +14,22 @@
     margin-right:0.5em;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
+    /* grid-template-rows: auto 1fr auto;     */
     grid-column-gap: 1em;
     grid-row-gap: 2em;
     width: 100%;
     height: 100%;
   }
 
-@media screen and (max-width: 480px) {
+  @media only screen and (max-width: 700px) {
       .item-container {
-        display:grid;
         grid-template-columns: repeat(2, 1fr);
     }
   }
 
-  @media screen and (max-width: 400px)  and (min-width: 150px) {
+  @media only screen and (max-width: 400px) {
     .item-container {
-      display:grid;
       grid-template-columns: repeat(1, 1fr);
   }
+    
 }

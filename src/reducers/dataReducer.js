@@ -4,7 +4,7 @@ import * as data_actions from '../actions/data_action'
 const initialState = {
     data:[],
     addedItems:[],
-    currentItem:null
+    currentItem:-999
 }
 
 const data_reducer = (state = initialState, action) => {
@@ -21,7 +21,7 @@ const data_reducer = (state = initialState, action) => {
             })
         case data_actions.CHANGE_BORDER:
             return Object.assign({}, state, {
-            currentItem:state.data[action.index]
+            currentItem:action.index
             })
         default:
             return state;

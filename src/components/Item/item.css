@@ -2,15 +2,18 @@
 .item-inside {
     display:flex;
     flex-direction: column;
-    border:1px #F5F5F5;
+    border:1px solid #F5F5F5;
     align-items:center;
     border-radius: 2px;
     box-shadow: rgba(0,0,0,0.8) 0 0 5px;    
-    font-family:'Lato'
+    font-family:'Lato';
+    z-index:10
 }
-.item-inside:active {
-    border:1px blue
+
+.item-inside.blue {
+    border:1px solid blue
 }
+
 .image-container {
     display:flex;
     justify-content: center;
@@ -41,9 +44,12 @@
     font-weight:0;
 }
 .button {
-    border:1px solid #D3D3D3;
+    border:2px solid #D3D3D3;
     padding:10px 20px 10px 20px;
     border-radius: 5px;    
+}
+.button.blue {
+    border:2px solid blue;
 }
 .button:hover {
     cursor:pointer;
