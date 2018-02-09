@@ -1,16 +1,13 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
-import Nav from './containers/Nav/Nav'
-import Item from './components/Item/Item'
+import Nav from '../components/Nav/Nav'
+import Item from '../components/Item/Item'
 import * as shopping_action from './actions/data_action'
 import css from './appcss.css'
 
 const mapStateToProps = store => ({
     datas: store.data_reducer.data,
     addedItems: store.data_reducer.addedItems
-  // skills: store.skills,
-  // login: store.login,
-  // signup: store.signUp
 });
 
 const mapDispatchToProps = (dispatch) => ({
@@ -28,7 +25,6 @@ class App extends Component {
   }
 
   render() {
-    console.log(this.props.addedItems)
     const item = this.props.datas.map((data,index) => {
       return <Item key={index} index={index} itemName={data.name} itemPic={data.filename} itemPrice={data.price} addToCart={this.props.addToCart}/>
     })
