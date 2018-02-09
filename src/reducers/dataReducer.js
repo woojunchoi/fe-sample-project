@@ -3,7 +3,8 @@ import * as data_actions from '../actions/data_action'
 
 const initialState = {
     data:[],
-    addedItems:[]
+    addedItems:[],
+    currentItem:null
 }
 
 const data_reducer = (state = initialState, action) => {
@@ -16,7 +17,11 @@ const data_reducer = (state = initialState, action) => {
             let cart = state.addedItems.slice()
             cart.push(state.data[action.index])
             return Object.assign({}, state, {
-                addedItems:cart
+                addedItems:cart,
+            })
+        case data_actions.CHANGE_BORDER:
+            return Object.assign({}, state, {
+            currentItem:state.data[action.index]
             })
         default:
             return state;

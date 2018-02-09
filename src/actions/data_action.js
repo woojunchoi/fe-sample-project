@@ -2,6 +2,7 @@ import axios from 'axios'
 
 export const SAVE_DATA = 'SAVE_DATA'
 export const ADD_CART ='ADD_CART'
+export const CHANGE_BORDER ='CHANGE_BORDER'
 
 export const receiveData = (data) => {
     return {
@@ -19,6 +20,12 @@ export const fetchData = () => {
 export const addCart = (index) => {
     return {
         type:ADD_CART,
+        index
+    }
+}
+export const changeBorder = (index) => {
+    return {
+        type:CHANGE_BORDER,
         index
     }
 }

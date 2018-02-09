@@ -7,12 +7,14 @@ import css from './appcss.css'
 
 const mapStateToProps = store => ({
     datas: store.data_reducer.data,
-    addedItems: store.data_reducer.addedItems
+    addedItems: store.data_reducer.addedItems,
+    currentItem: store.data_reducer.currentItem
 });
 
 const mapDispatchToProps = (dispatch) => ({
   fetchData : () => dispatch(shopping_action.fetchData()),
-  addToCart : (e) => dispatch(shopping_action.addCart(e.target.id))
+  addToCart : (e) => dispatch(shopping_action.addCart(e.target.id)),
+  changeBorder : (e) => dispatch(shopping_action.changeBorder(e.target.id))
 });
 
 class App extends Component {
@@ -25,8 +27,17 @@ class App extends Component {
   }
 
   render() {
+    console.log(this.props.currentItem)
     const item = this.props.datas.map((data,index) => {
-      return <Item key={index} index={index} itemName={data.name} itemPic={data.filename} itemPrice={data.price} addToCart={this.props.addToCart}/>
+      return <Item
+       key={index}
+       index={index}
+       itemName={data.name}
+       itemPic={data.filename}
+       itemPrice={data.price}
+       addToCart={this.props.addToCart}
+       currentItem={this.props.currentItem}
+       changeBorder={this.props.changeBorder}/>
     })
 
     return(

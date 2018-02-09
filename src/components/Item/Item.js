@@ -3,14 +3,22 @@ import css from './item.css';
 
 
 class Item extends Component {
-
   constructor(props) {
     super(props);
+
+    // this.changeBorder = this.changeBorder.bind(this)
   }
 
+  // changeBorder(e) {
+  //   this.props.changeBorder(e)
+  //   if(this.props.currentItem === e.target.key) {
+  //     console.log('hi')
+  //   }
+  // }
+  
   render() {
     return(
-      <div className ='item-inside'>
+      <div className ='item-inside' id={this.props.index} onClick={(e) => this.props.changeBorder(e)}>
         <div className ='image-container'>
           <img className='item-image'src={this.props.itemPic} />
         </div>

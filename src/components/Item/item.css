@@ -8,6 +8,9 @@
     box-shadow: rgba(0,0,0,0.8) 0 0 5px;    
     font-family:'Lato'
 }
+.item-inside:active {
+    border:1px blue
+}
 .image-container {
     display:flex;
     justify-content: center;
