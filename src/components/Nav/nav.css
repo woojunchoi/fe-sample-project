@@ -22,8 +22,15 @@
 }
 
 #shop {
-    text-decoration: underline;
     font-size:15px;
+    text-decoration: underline;
+}
+#shop:hover {
+    cursor:pointer
+}
+
+#nav-cart {
+    cursor:pointer
 }
 
 #cart-number {

@@ -18,7 +18,7 @@ class Nav extends Component {
             <div id='shop' className='nav'>Shop</div>
         </div>
         <div className='nav-right'>
-            <div className='nav'>Your cart</div>
+            <div id='nav-cart' className='nav'>Your cart</div>
             <div id='cart-number' className='nav'>{this.props.numberofitem}</div>
         </div>
       </div>
