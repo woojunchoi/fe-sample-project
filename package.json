@@ -1,5 +1,5 @@
 {
-  "name": "Sellbrite",
+  "name": "sellbrite",
   "version": "1.0.0",
   "description": "takehome_project",
   "main": "index.js",
@@ -20,7 +20,6 @@
     "babel-preset-es2015": "^6.24.1",
     "babel-preset-react": "^6.24.1",
     "babel-preset-stage-2": "^6.24.1",
-    "body-parser": "^1.18.2",
     "css-loader": "^0.28.7",
     "express": "^4.16.2",
     "live-server": "^1.2.0",
