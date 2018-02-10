@@ -23,7 +23,6 @@
 
 #shop {
     font-size:15px;
-    text-decoration: underline;
 }
 #shop:hover {
     cursor:pointer
@@ -51,4 +50,7 @@
 .nav-right {
     margin-right:10px;
     font-size:20px;
+}
+.nav.selected {
+    text-decoration: underline;    
 }
