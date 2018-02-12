@@ -36,5 +36,13 @@
   },
   "devDependencies": {
     "webpack-dev-server": "^2.8.2"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Sellbrite/fe-sample-project.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Sellbrite/fe-sample-project/issues"
+  },
+  "homepage": "https://github.com/Sellbrite/fe-sample-project#readme"
 }
