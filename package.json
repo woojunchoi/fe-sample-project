@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "compile": "webpack -w",
-    "start": "server.js",
+    "start": "node server.js",
+    "nodemon": "nodemon server.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Woojun Choi",
@@ -36,13 +37,5 @@
   },
   "devDependencies": {
     "webpack-dev-server": "^2.8.2"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/Sellbrite/fe-sample-project.git"
-  },
-  "bugs": {
-    "url": "https://github.com/Sellbrite/fe-sample-project/issues"
-  },
-  "homepage": "https://github.com/Sellbrite/fe-sample-project#readme"
+  }
 }

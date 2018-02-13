@@ -8,7 +8,7 @@ class CartModal extends Component {
   }
   
   render() {
-
+    //change class name based on the state
     let cartClass = ['cart-modal']
     if(this.props.cartPage) {
         cartClass.push('cart')
@@ -16,7 +16,7 @@ class CartModal extends Component {
 
     let cartContent =[];
     let price = 0;
-
+    //default: in case cart is empty
     if(this.props.cartItem.length === 0) {
         cartContent.push(    
             <div key='0' className='cart-text'> 
@@ -25,7 +25,7 @@ class CartModal extends Component {
             </div>
         )
     }
-
+    //in case cart is not empty
     else {
         for(let i=0; i<this.props.cartItem.length; i++) {
             price += this.props.cartItem[i].price/100
@@ -34,8 +34,8 @@ class CartModal extends Component {
                         <img className='item-pic' src={this.props.cartItem[i].filename} />
                         <div className ='item-desc'>
                             <div className='nameanddelete'>
-                            <p>{this.props.cartItem[i].name}</p>
-                            <i id={i} onClick={(e) => this.props.deleteItem(e)} className="fa fa-close"></i>
+                                <p>{this.props.cartItem[i].name}</p>
+                                <i id={i} onClick={(e) => this.props.deleteItem(e)} className="fa fa-close"></i>
                             </div>
                             <p>${this.props.cartItem[i].price/100}</p>
                         </div>
@@ -45,9 +45,10 @@ class CartModal extends Component {
         
     }
     return(
+      //skeleton structure for cart
       <div className ={cartClass.join(' ')}>
         <div className = 'cart-content'>
-        <div key='cart' className ='cart-text'>
+            <div key='cart' className ='cart-text'>
                 <h2 className='yourcart'>Your Cart</h2>
                 <br/>
                 {cartContent}
@@ -56,7 +57,7 @@ class CartModal extends Component {
                     <p>Total</p>
                     <p>${price.toFixed(2)}</p>
                 </div>
-                <div className='backbutton' onClick={this.props.changeView}>Back</div>
+            <div className='backbutton' onClick={this.props.changeView}>Back</div>
             </div>  
         </div>
       </div>

@@ -3,12 +3,12 @@ import css from './nav.css';
 
 
 class Nav extends Component {
-
   constructor(props) {
     super(props);
   }
 
   render() {
+    //change classname based on the state
     let navStyle =['nav']
     if(!this.props.cartPage) {
       navStyle.push('selected')
@@ -19,7 +19,7 @@ class Nav extends Component {
     }
 
     return(
-      <div>
+    <div>
       <div className='nav_place'>
         <div>
             <span className="glyphicon glyphicon-shopping-cart"></span>
@@ -31,7 +31,7 @@ class Nav extends Component {
             <div id='cart-number' className='nav'>{this.props.numberofitem}</div>
         </div>
       </div>
-      </div>
+    </div>
     )
   }
 }

@@ -1,3 +1,4 @@
+/* default : desktop mode */
 .cart-modal {
     display: none; /* Hidden by default */
     width:100%;
@@ -8,6 +9,7 @@
     font-size:20px;
     color:black;	
 }
+
 .cart-modal.cart {
     display:flex;
     justify-content: center;
@@ -30,16 +32,18 @@
 }
 
 .line{
-    width: 40%;
+    width: 60%;
     height: 47px;
     border-bottom: 1px solid black;
     border-width:thick
     }
+
 .total {
     display:flex;
     justify-content: space-between;
-    width:40%;
+    width:60%;
 }
+
 .backbutton {
     border:2px solid #A9A9A9;
     padding:5px 35px 5px 35px;
@@ -47,41 +51,64 @@
     cursor:pointer;
     z-index:10
 }
+
 .item-pic {
     width:30%;
-    height:30%;
+    height:20%;
 }
+
 .item-list {
     display:flex;
     justify-content: space-between;
     align-items: center;
-    width:40%;
+    width:60%;
     margin-bottom:2%;
 }
+
 .item-desc {
     display:flex;
+    height:20%;
     flex-direction:column;
     align-items: flex-end;
 }
+
 .item-desc > p {
     margin-bottom:0;
 }
 .total > p {
     font-size:25px;
 }
+
 .nameanddelete {
     display:flex;
     margin-right:3px;
     align-items:center;
 }
+
 .nameanddelete > p{
     font-size:15px;
     margin-bottom:0;
 }
+
 .fa {
     font-size:10px;
     padding-bottom:2px;
 }
+
 .fa:hover {
     cursor:pointer;
+}
+
+/* For smartphones  */
+@media only screen and (max-width: 766px) {
+    .item-list {
+        width:350px;
+        margin-bottom:10px;
+    }
+    .line {
+        width:350px
+    }
+    .total {
+        width:350px;
+    }
 }

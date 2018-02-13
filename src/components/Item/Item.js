@@ -5,17 +5,8 @@ import css from './item.css';
 class Item extends Component {
   constructor(props) {
     super(props);
+}
 
-    // this.changeBorder = this.changeBorder.bind(this)
-  }
-
-  // changeBorder(e) {
-  //   this.props.changeBorder(e)
-  //   if(this.props.currentItem === e.target.key) {
-  //     console.log('hi')
-  //   }
-  // }
-  
   render() {
     let boxClass = ['item-inside'];
     let buttonClass = ['button']
