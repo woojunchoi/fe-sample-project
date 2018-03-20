@@ -22,6 +22,9 @@
 >    - `npm start`
 > 6. Open a browser and navigate to `localhost:3000`
 
+### Visit
+- <a href='https://guarded-mountain-39184.herokuapp.com/'>https://guarded-mountain-39184.herokuapp.com/</a>
+
 ##### DEMO IMAGE: 
 ![alt text](/newmain.png "Shopping Cart")
 
