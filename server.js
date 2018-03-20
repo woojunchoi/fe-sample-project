@@ -34,8 +34,8 @@ app.use('/', express.static(__dirname + '/images'));
 app.use('/', express.static(__dirname + '/public'));
 app.get('/data.json', ((req, res) => {
   res.sendFile(__dirname + '/product-payload.json')
-  console.log('hi')
 }))
+
 
 /**
  * Listen to Port

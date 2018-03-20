@@ -5,8 +5,8 @@
     height:45px;
     align-items: center;
     width:100%;
-
 }
+
 .nav {
     display:inline-block;
     color:white;
@@ -22,8 +22,15 @@
 }
 
 #shop {
-    text-decoration: underline;
     font-size:15px;
+}
+
+#shop:hover {
+    cursor:pointer
+}
+
+#nav-cart {
+    cursor:pointer
 }
 
 #cart-number {
@@ -44,4 +51,7 @@
 .nav-right {
     margin-right:10px;
     font-size:20px;
+}
+.nav.selected {
+    text-decoration: underline;    
 }

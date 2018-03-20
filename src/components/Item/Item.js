@@ -3,14 +3,19 @@ import css from './item.css';
 
 
 class Item extends Component {
-
   constructor(props) {
     super(props);
-  }
+}
 
   render() {
+    let boxClass = ['item-inside'];
+    let buttonClass = ['button']
+    if(this.props.currentItem == this.props.index) {
+      boxClass.push('blue');
+      buttonClass.push('blue')
+    }
     return(
-      <div className ='item-inside'>
+      <div className ={boxClass.join(' ')} id={this.props.index} onClick={(e) => this.props.changeBorder(e)}>
         <div className ='image-container'>
           <img className='item-image'src={this.props.itemPic} />
         </div>
@@ -19,7 +24,7 @@ class Item extends Component {
           <p className='content-price'>{`$${this.props.itemPrice/100}`}</p>
         </div>
         <div className ='button-container'>
-          <div className='button' id={this.props.index} onClick={(e) => this.props.addToCart(e)}>Add to cart</div>
+          <div className={buttonClass.join(' ')} id={this.props.index} onClick={(e) => this.props.addToCart(e)}>Add to cart</div>
         </div>
       </div>
     )

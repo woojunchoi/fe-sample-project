@@ -23,4 +23,5 @@
 > 6. Open a browser and navigate to `localhost:3000`
 
 ##### DEMO IMAGE: 
-![alt text](/demo_image.png "Shopping Cart")
+![alt text](/main.png "Shopping Cart")
+![alt text](/cartmodal.png "Cart")
