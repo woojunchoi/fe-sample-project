@@ -5,7 +5,8 @@
     border:1px #F5F5F5;
     align-items:center;
     border-radius: 2px;
-    box-shadow: rgba(0,0,0,0.8) 0 0 5px;    
+    box-shadow: rgba(0,0,0,0.8) 0 0 5px;  
+    font-family: Lato;  
 }
 .image-container {
     display:flex;
